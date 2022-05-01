@@ -2,26 +2,46 @@
 <project version="4">
   <component name="ArtifactsWorkspaceSettings">
     <artifacts-to-build>
-      <artifact name="demo8:war exploded" />
+      <artifact name="demo6:war exploded" />
     </artifacts-to-build>
   </component>
   <component name="AutoImportSettings">
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="91147018-bc1e-4266-8423-22998e179e2b" name="变更" comment="实验六七">
-      <change afterPath="$PROJECT_DIR$/demo8/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/demo8/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/demo8/src/main/java/site/whatsblog/controller/RegisterController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/demo8/src/main/resources/springmvc-servlet.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/demo8/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/demo8/src/main/webapp/index.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/demo8/src/main/webapp/login.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/demo8/src/main/webapp/register.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+    <list default="true" id="91147018-bc1e-4266-8423-22998e179e2b" name="变更" comment="实验六新增图书管理系统">
+      <change afterPath="$PROJECT_DIR$/demo6/sql/book.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo6/sql/users.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo6/src/main/java/site/whatsblog/bookManage/dao/BookDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo6/src/main/java/site/whatsblog/bookManage/dao/UserDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo6/src/main/java/site/whatsblog/bookManage/dao/impl/BookDaoImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo6/src/main/java/site/whatsblog/bookManage/dao/impl/UserDaoImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo6/src/main/java/site/whatsblog/bookManage/filter/LoginFilter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo6/src/main/java/site/whatsblog/bookManage/pojo/Book.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo6/src/main/java/site/whatsblog/bookManage/pojo/User.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo6/src/main/java/site/whatsblog/bookManage/service/BookService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo6/src/main/java/site/whatsblog/bookManage/service/UserService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo6/src/main/java/site/whatsblog/bookManage/service/impl/BookServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo6/src/main/java/site/whatsblog/bookManage/service/impl/UserServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo6/src/main/java/site/whatsblog/bookManage/util/JDBCUtils.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo6/src/main/java/site/whatsblog/bookManage/web/AddBookServlet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo6/src/main/java/site/whatsblog/bookManage/web/FindAllBookServlet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo6/src/main/java/site/whatsblog/bookManage/web/LoginServlet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo6/src/main/java/site/whatsblog/bookManage/web/ManageBookServlet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo6/src/main/java/site/whatsblog/bookManage/web/RegisterServlet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo6/src/main/java/site/whatsblog/bookManage/web/UpdateBookServlet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo6/src/main/resources/appllicationContext-book.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo6/src/main/resources/druid.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo6/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo6/src/main/webapp/addBook.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo6/src/main/webapp/bookInfo.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo6/src/main/webapp/index.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo6/src/main/webapp/list.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo6/src/main/webapp/login.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo6/src/main/webapp/register.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo6/src/main/webapp/updateBook.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo6/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/demo6/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -33,8 +53,8 @@
       <list>
         <option value="Interface" />
         <option value="spring-beans.schema" />
-        <option value="Jsp File" />
         <option value="Class" />
+        <option value="Jsp File" />
       </list>
     </option>
   </component>
@@ -65,6 +85,7 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
     "jdk.selected.JAVA_MODULE": "1.8",
+    "last_opened_file_path": "D:/Professional Files/Java Project/USTS-J2EE/demo6/src/main/webapp",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -72,22 +93,30 @@
     "project.structure.last.edited": "模块",
     "project.structure.proportion": "0.15234375",
     "project.structure.side.proportion": "0.2",
-    "spring.configuration.checksum": "b0efe0f8e7664563d3ee76b81e314ff0"
+    "spring.configuration.checksum": "898d4aa1627a5679f64c47df03377764"
   }
 }]]></component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
+      <recent name="site.whatsblog.bookManage.service.impl" />
+      <recent name="site.whatsblog.bookManage.dao.impl" />
       <recent name="site.whatsblog.service.impl" />
       <recent name="site.whatsblog.dao.impl" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\Professional Files\Java Project\USTS-J2EE\demo6\src\main\webapp" />
+      <recent name="D:\Professional Files\Java Project\USTS-J2EE\demo6\sql" />
+      <recent name="D:\Professional Files\Java Project\USTS-J2EE\demo6\target\demo6" />
+      <recent name="D:\Professional Files\Java Project\USTS-J2EE\demo6\src\main\resources" />
       <recent name="D:\Professional Files\Java Project\USTS-J2EE\demo5\sql" />
-      <recent name="D:\Professional Files\Java Project\USTS-J2EE\demo5\src\main\webapp" />
-      <recent name="D:\Professional Files\Java Project\USTS-J2EE\demo4\src\main\java\site\whatsblog\web" />
-      <recent name="D:\Professional Files\Java Project\USTS-J2EE\demo2\src\main\java" />
-      <recent name="D:\Professional Files\Java Project\USTS-J2EE\demo2\src\main\webapp" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\Professional Files\Java Project\USTS-J2EE\demo6\src\main" />
+      <recent name="D:\Professional Files\Java Project\USTS-J2EE\demo6\src" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="site.whatsblog.bookManage.web" />
+      <recent name="site.whatsblog.bookManage.util" />
       <recent name="site.whatsblog.test" />
     </key>
   </component>
@@ -147,7 +176,7 @@
     <configuration name="Tomcat 8.5.75" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 8.5.75" ALTERNATIVE_JRE_ENABLED="false" nameIsGenerated="true">
       <option name="UPDATING_POLICY" value="restart-server" />
       <deployment>
-        <artifact name="demo8:war exploded">
+        <artifact name="demo6:war exploded">
           <settings>
             <option name="CONTEXT_PATH" value="/" />
           </settings>
@@ -227,7 +256,7 @@
       <method v="2">
         <option name="Make" enabled="true" />
         <option name="BuildArtifacts" enabled="true">
-          <artifact name="demo8:war exploded" />
+          <artifact name="demo6:war exploded" />
         </option>
       </method>
     </configuration>
@@ -260,7 +289,9 @@
       <workItem from="1651395956876" duration="422000" />
       <workItem from="1651396399257" duration="101000" />
       <workItem from="1651396571678" duration="140000" />
-      <workItem from="1651396734105" duration="2052000" />
+      <workItem from="1651396734105" duration="2870000" />
+      <workItem from="1651408316909" duration="7927000" />
+      <workItem from="1651417450404" duration="1032000" />
     </task>
     <task id="LOCAL-00001" summary="实验三四">
       <created>1651382262193</created>
@@ -283,7 +314,14 @@
       <option name="project" value="LOCAL" />
       <updated>1651396610791</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="实验八">
+      <created>1651398813735</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1651398813735</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -305,6 +343,19 @@
     <MESSAGE value="实验三四" />
     <MESSAGE value="实验五" />
     <MESSAGE value="实验六七" />
-    <option name="LAST_COMMIT_MESSAGE" value="实验六七" />
+    <MESSAGE value="实验八" />
+    <MESSAGE value="实验六新增图书管理系统" />
+    <option name="LAST_COMMIT_MESSAGE" value="实验六新增图书管理系统" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/demo6/src/main/java/site/whatsblog/bookManage/web/LoginServlet.java</url>
+          <line>36</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
