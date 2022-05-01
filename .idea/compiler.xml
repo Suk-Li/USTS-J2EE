@@ -11,6 +11,7 @@
         <module name="demo5" />
         <module name="demo6" />
         <module name="demo7" />
+        <module name="demo8" />
         <module name="demo1" />
         <module name="demo2" />
       </profile>

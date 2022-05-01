@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ArtifactsWorkspaceSettings">
     <artifacts-to-build>
-      <artifact name="demo5:war exploded" />
+      <artifact name="demo8:war exploded" />
     </artifacts-to-build>
   </component>
   <component name="AutoImportSettings">
@@ -10,27 +10,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="91147018-bc1e-4266-8423-22998e179e2b" name="变更" comment="实验六七">
-      <change afterPath="$PROJECT_DIR$/demo6/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/demo6/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/demo6/src/main/java/site/whatsblog/interfaces/Human.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/demo6/src/main/java/site/whatsblog/interfaces/Language.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/demo6/src/main/java/site/whatsblog/participants/Chinese.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/demo6/src/main/java/site/whatsblog/participants/English.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/demo6/src/main/java/site/whatsblog/pojo/Course.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/demo6/src/main/java/site/whatsblog/pojo/CourseFactory.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/demo6/src/main/java/site/whatsblog/pojo/Student.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/demo6/src/main/java/site/whatsblog/test/TestCourse.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/demo6/src/main/java/site/whatsblog/test/TestParticipants.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/demo6/src/main/java/site/whatsblog/test/TestStudent.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/demo6/src/main/resources/applicationContext-2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/demo6/src/main/resources/applicationContext-3.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/demo6/src/main/resources/applicationContext.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/demo7/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/demo7/src/main/java/site/whatsblog/mapper/UserMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/demo7/src/main/java/site/whatsblog/mapper/UserMapper.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/demo7/src/main/java/site/whatsblog/pojo/User.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/demo7/src/main/java/site/whatsblog/test/MyBatisTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/demo7/src/main/resources/mybatis-config.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo8/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo8/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo8/src/main/java/site/whatsblog/controller/RegisterController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo8/src/main/resources/springmvc-servlet.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo8/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo8/src/main/webapp/index.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo8/src/main/webapp/login.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo8/src/main/webapp/register.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
@@ -44,9 +31,9 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Jsp File" />
-        <option value="spring-beans.schema" />
         <option value="Interface" />
+        <option value="spring-beans.schema" />
+        <option value="Jsp File" />
         <option value="Class" />
       </list>
     </option>
@@ -72,27 +59,22 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;jdk.selected.JAVA_MODULE&quot;: &quot;1.8&quot;,
-    &quot;last_directory_selection&quot;: &quot;D:/Professional Files/Java Project/USTS-J2EE/demo2/src/main/java/site/whatsblog/pojo&quot;,
-    &quot;last_opened_file_path&quot;: &quot;D:/Professional Files/Java Project/USTS-J2EE/demo5/sql&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;模块&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.15234375&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;reference.projectsettings.compiler.javacompiler&quot;,
-    &quot;spring.configuration.checksum&quot;: &quot;b0efe0f8e7664563d3ee76b81e314ff0&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "jdk.selected.JAVA_MODULE": "1.8",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "project.structure.last.edited": "模块",
+    "project.structure.proportion": "0.15234375",
+    "project.structure.side.proportion": "0.2",
+    "spring.configuration.checksum": "b0efe0f8e7664563d3ee76b81e314ff0"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
       <recent name="site.whatsblog.service.impl" />
@@ -109,7 +91,7 @@
       <recent name="site.whatsblog.test" />
     </key>
   </component>
-  <component name="RunManager" selected="应用程序.MyBatisTest">
+  <component name="RunManager" selected="Tomcat 服务器.Tomcat 8.5.75">
     <configuration name="MyBatisTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="site.whatsblog.test.MyBatisTest" />
       <module name="demo7" />
@@ -165,7 +147,7 @@
     <configuration name="Tomcat 8.5.75" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 8.5.75" ALTERNATIVE_JRE_ENABLED="false" nameIsGenerated="true">
       <option name="UPDATING_POLICY" value="restart-server" />
       <deployment>
-        <artifact name="demo5:war exploded">
+        <artifact name="demo8:war exploded">
           <settings>
             <option name="CONTEXT_PATH" value="/" />
           </settings>
@@ -245,10 +227,17 @@
       <method v="2">
         <option name="Make" enabled="true" />
         <option name="BuildArtifacts" enabled="true">
-          <artifact name="demo5:war exploded" />
+          <artifact name="demo8:war exploded" />
         </option>
       </method>
     </configuration>
+    <list>
+      <item itemvalue="Tomcat 服务器.Tomcat 8.5.75" />
+      <item itemvalue="应用程序.MyBatisTest" />
+      <item itemvalue="应用程序.TestCourse" />
+      <item itemvalue="应用程序.TestParticipants" />
+      <item itemvalue="应用程序.TestStudent" />
+    </list>
     <recent_temporary>
       <list>
         <item itemvalue="应用程序.MyBatisTest" />
@@ -270,6 +259,8 @@
       <workItem from="1651389788455" duration="6096000" />
       <workItem from="1651395956876" duration="422000" />
       <workItem from="1651396399257" duration="101000" />
+      <workItem from="1651396571678" duration="140000" />
+      <workItem from="1651396734105" duration="2052000" />
     </task>
     <task id="LOCAL-00001" summary="实验三四">
       <created>1651382262193</created>
@@ -285,7 +276,14 @@
       <option name="project" value="LOCAL" />
       <updated>1651388062038</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="实验六七">
+      <created>1651396610791</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1651396610791</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
