@@ -2,34 +2,38 @@
 <project version="4">
   <component name="ArtifactsWorkspaceSettings">
     <artifacts-to-build>
-      <artifact name="demo4:war exploded" />
+      <artifact name="demo5:war exploded" />
     </artifacts-to-build>
   </component>
   <component name="AutoImportSettings">
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="91147018-bc1e-4266-8423-22998e179e2b" name="变更" comment="">
-      <change afterPath="$PROJECT_DIR$/demo3/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/demo3/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/demo3/src/main/java/site/whatsblog/web/GetUsernameServlet.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/demo3/src/main/java/site/whatsblog/web/HelloServlet.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/demo3/src/main/java/site/whatsblog/web/ParamServlet.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/demo3/src/main/java/site/whatsblog/web/ShowDateServlet.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/demo3/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/demo3/src/main/webapp/index.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/demo4/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/demo4/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/demo4/src/main/java/site/whatsblog/pojo/User.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/demo4/src/main/java/site/whatsblog/web/CookieServlet.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/demo4/src/main/java/site/whatsblog/web/SessionServlet.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/demo4/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/demo4/src/main/webapp/index.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/demo4/src/main/webapp/login.jsp" afterDir="false" />
+    <list default="true" id="91147018-bc1e-4266-8423-22998e179e2b" name="变更" comment="实验三四">
+      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sqldialects.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo5/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo5/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo5/sql/users.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo5/src/main/java/site/whatsblog/dao/UserDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo5/src/main/java/site/whatsblog/dao/impl/UserDaoImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo5/src/main/java/site/whatsblog/pojo/User.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo5/src/main/java/site/whatsblog/service/UserService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo5/src/main/java/site/whatsblog/service/impl/UserServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo5/src/main/java/site/whatsblog/utils/JDBCUtils.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo5/src/main/java/site/whatsblog/web/LoginServlet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo5/src/main/java/site/whatsblog/web/RegisterServlet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo5/src/main/resources/druid.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo5/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo5/src/main/webapp/index.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo5/src/main/webapp/info.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo5/src/main/webapp/login.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo5/src/main/webapp/register.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/USTS-J2EE.iml" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -39,8 +43,9 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Jsp File" />
+        <option value="Interface" />
         <option value="Class" />
+        <option value="Jsp File" />
       </list>
     </option>
   </component>
@@ -70,9 +75,10 @@
     "ASKED_ADD_EXTERNAL_FILES": "true",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
     "jdk.selected.JAVA_MODULE": "1.8",
-    "last_opened_file_path": "D:/Professional Files/Java Project/USTS-J2EE/demo4/src/main/java/site/whatsblog/web",
+    "last_opened_file_path": "D:/Professional Files/Java Project/USTS-J2EE/demo5/sql",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -80,11 +86,17 @@
     "project.structure.last.edited": "模块",
     "project.structure.proportion": "0.15234375",
     "project.structure.side.proportion": "0.2",
-    "settings.editor.selected.configurable": "reference.projectsettings.compiler.javacompiler"
+    "settings.editor.selected.configurable": "preferences.keymap"
   }
 }]]></component>
   <component name="RecentsManager">
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="site.whatsblog.service.impl" />
+      <recent name="site.whatsblog.dao.impl" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\Professional Files\Java Project\USTS-J2EE\demo5\sql" />
+      <recent name="D:\Professional Files\Java Project\USTS-J2EE\demo5\src\main\webapp" />
       <recent name="D:\Professional Files\Java Project\USTS-J2EE\demo4\src\main\java\site\whatsblog\web" />
       <recent name="D:\Professional Files\Java Project\USTS-J2EE\demo2\src\main\java" />
       <recent name="D:\Professional Files\Java Project\USTS-J2EE\demo2\src\main\webapp" />
@@ -94,7 +106,7 @@
     <configuration name="Tomcat 8.5.75" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 8.5.75" ALTERNATIVE_JRE_ENABLED="false" nameIsGenerated="true">
       <option name="UPDATING_POLICY" value="restart-server" />
       <deployment>
-        <artifact name="demo4:war exploded">
+        <artifact name="demo5:war exploded">
           <settings>
             <option name="CONTEXT_PATH" value="/" />
           </settings>
@@ -174,7 +186,7 @@
       <method v="2">
         <option name="Make" enabled="true" />
         <option name="BuildArtifacts" enabled="true">
-          <artifact name="demo4:war exploded" />
+          <artifact name="demo5:war exploded" />
         </option>
       </method>
     </configuration>
@@ -187,8 +199,16 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1651365915188</updated>
-      <workItem from="1651365916697" duration="14733000" />
+      <workItem from="1651365916697" duration="18986000" />
     </task>
+    <task id="LOCAL-00001" summary="实验三四">
+      <created>1651382262193</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1651382262193</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -207,5 +227,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+    <MESSAGE value="实验三四" />
+    <option name="LAST_COMMIT_MESSAGE" value="实验三四" />
   </component>
 </project>
