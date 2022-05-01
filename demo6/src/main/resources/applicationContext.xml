@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+        https://www.springframework.org/schema/beans/spring-beans.xsd">
+    <!--course的无参构造-->
+    <bean class="site.whatsblog.pojo.Course" id="course"/>
+    <!--course的无参构造-->
+    <bean class="site.whatsblog.pojo.Course" id="course1">
+        <property name="id" value="1"/>
+        <property name="courseName" value="Java EE"/>
+    </bean>
+    <!--course工厂模式实例化-->
+    <bean class="site.whatsblog.pojo.Course" factory-method="createCourse" id="course2"/>
+    <!--添加工厂类-->
+    <bean class="site.whatsblog.pojo.CourseFactory" id="factory"/>
+    <!--工厂模式生成course-->
+    <bean factory-bean="factory" factory-method="createCourse" id="course3"/>
+
+</beans>

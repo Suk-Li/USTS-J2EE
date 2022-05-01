@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+       http://www.springframework.org/schema/beans/spring-beans.xsd">
+    <!-- 定义 Student 类 Bean，注入 Map 类对象属性 -->
+    <bean class="site.whatsblog.pojo.Student" id="student">
+        <!-- list 属性注入 -->
+        <property name="courses2">
+            <list>
+                <ref bean="course1"/>
+                <ref bean="course2"/>
+                <ref bean="course3"/>
+            </list>
+        </property>
+        <!-- map 属性注入 -->
+        <property name="courses1">
+            <map>
+                <entry key="1" value-ref="course1"/>
+                <entry key="2" value-ref="course2"/>
+                <entry key="3" value-ref="course3"/>
+            </map>
+        </property>
+        <property name="name" value="Suk"/>
+        <property name="id" value="1920013514"/>
+    </bean>
+    <bean class="site.whatsblog.pojo.Course" id="course1">
+        <property name="courseName" value="C++"/>
+        <property name="id" value="1"/>
+    </bean>
+    <bean class="site.whatsblog.pojo.Course" id="course2">
+        <property name="courseName" value="Java"/>
+        <property name="id" value="3"/>
+    </bean>
+    <bean class="site.whatsblog.pojo.Course" id="course3">
+        <property name="courseName" value="Python"/>
+        <property name="id" value="3"/>
+    </bean>
+</beans>
