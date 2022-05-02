@@ -24,13 +24,29 @@ import java.sql.SQLException;
  */
 @Repository
 public class UserDaoImpl implements UserDao {
-//    @Autowired
-//    private Connection connection = JDBCUtils.getConnection();
+    @Autowired
+    private Connection connection;
+    @Override
+    public int insertUser(User user) {
+        int i = 0;
+        try {
+
+            PreparedStatement statement = connection.prepareStatement("insert into users(username,password) values(?,?)");
+            statement.setString(1, user.getUsername());
+            statement.setString(2, user.getPassword());
+            i = statement.executeUpdate();
+
+        } catch (SQLException e) {
+            throw new RuntimeException(e);
+        }
+        return i;
+    }
+
     @Override
     public User findUserByUsernameAndPassword(String username, String password) {
         User user = null;
         try {
-            Connection connection = JDBCUtils.getDataSource().getConnection();
+
             PreparedStatement statement = connection.prepareStatement("select * from users where username = ? and password = ?");
             statement.setString(1, username);
             statement.setString(2, password);
@@ -41,24 +57,10 @@ public class UserDaoImpl implements UserDao {
                 user.setUsername(resultSet.getString("username"));
                 user.setPassword(resultSet.getString("password"));
             }
+
         } catch (SQLException e) {
             throw new RuntimeException(e);
         }
         return user;
-    }
-
-    @Override
-    public int insertUser(User user) {
-        int i = 0;
-        try {
-            Connection connection = JDBCUtils.getDataSource().getConnection();
-            PreparedStatement statement = connection.prepareStatement("insert into users(username,password) values(?,?)");
-            statement.setString(1, user.getUsername());
-            statement.setString(2, user.getPassword());
-            i = statement.executeUpdate();
-        } catch (SQLException e) {
-            throw new RuntimeException(e);
-        }
-        return i;
     }
 }

@@ -6,42 +6,28 @@
     </artifacts-to-build>
   </component>
   <component name="AutoImportSettings">
-    <option name="autoReloadType" value="SELECTIVE" />
+    <option name="autoReloadType" value="ALL" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="91147018-bc1e-4266-8423-22998e179e2b" name="变更" comment="实验六新增图书管理系统">
-      <change afterPath="$PROJECT_DIR$/demo6/sql/book.sql" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/demo6/sql/users.sql" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/demo6/src/main/java/site/whatsblog/bookManage/dao/BookDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/demo6/src/main/java/site/whatsblog/bookManage/dao/UserDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/demo6/src/main/java/site/whatsblog/bookManage/dao/impl/BookDaoImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/demo6/src/main/java/site/whatsblog/bookManage/dao/impl/UserDaoImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/demo6/src/main/java/site/whatsblog/bookManage/filter/LoginFilter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/demo6/src/main/java/site/whatsblog/bookManage/pojo/Book.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/demo6/src/main/java/site/whatsblog/bookManage/pojo/User.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/demo6/src/main/java/site/whatsblog/bookManage/service/BookService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/demo6/src/main/java/site/whatsblog/bookManage/service/UserService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/demo6/src/main/java/site/whatsblog/bookManage/service/impl/BookServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/demo6/src/main/java/site/whatsblog/bookManage/service/impl/UserServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/demo6/src/main/java/site/whatsblog/bookManage/util/JDBCUtils.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/demo6/src/main/java/site/whatsblog/bookManage/web/AddBookServlet.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/demo6/src/main/java/site/whatsblog/bookManage/web/FindAllBookServlet.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/demo6/src/main/java/site/whatsblog/bookManage/web/LoginServlet.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/demo6/src/main/java/site/whatsblog/bookManage/web/ManageBookServlet.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/demo6/src/main/java/site/whatsblog/bookManage/web/RegisterServlet.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/demo6/src/main/java/site/whatsblog/bookManage/web/UpdateBookServlet.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/demo6/src/main/resources/appllicationContext-book.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/demo6/src/main/resources/druid.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/demo6/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/demo6/src/main/webapp/addBook.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/demo6/src/main/webapp/bookInfo.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/demo6/src/main/webapp/index.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/demo6/src/main/webapp/list.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/demo6/src/main/webapp/login.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/demo6/src/main/webapp/register.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/demo6/src/main/webapp/updateBook.jsp" afterDir="false" />
+    <list default="true" id="91147018-bc1e-4266-8423-22998e179e2b" name="变更" comment="实验六图书管理系统修改，使用Spring容器管理">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/demo6/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/demo6/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo6/src/main/java/site/whatsblog/bookManage/dao/impl/BookDaoImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/demo6/src/main/java/site/whatsblog/bookManage/dao/impl/BookDaoImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo6/src/main/java/site/whatsblog/bookManage/dao/impl/UserDaoImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/demo6/src/main/java/site/whatsblog/bookManage/dao/impl/UserDaoImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo6/src/main/java/site/whatsblog/bookManage/filter/LoginFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/demo6/src/main/java/site/whatsblog/bookManage/filter/LoginFilter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo6/src/main/java/site/whatsblog/bookManage/service/impl/BookServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/demo6/src/main/java/site/whatsblog/bookManage/service/impl/BookServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo6/src/main/java/site/whatsblog/bookManage/service/impl/UserServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/demo6/src/main/java/site/whatsblog/bookManage/service/impl/UserServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo6/src/main/java/site/whatsblog/bookManage/web/AddBookServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/demo6/src/main/java/site/whatsblog/bookManage/web/AddBookServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo6/src/main/java/site/whatsblog/bookManage/web/FindAllBookServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/demo6/src/main/java/site/whatsblog/bookManage/web/FindAllBookServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo6/src/main/java/site/whatsblog/bookManage/web/LoginServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/demo6/src/main/java/site/whatsblog/bookManage/web/LoginServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo6/src/main/java/site/whatsblog/bookManage/web/ManageBookServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/demo6/src/main/java/site/whatsblog/bookManage/web/ManageBookServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo6/src/main/java/site/whatsblog/bookManage/web/RegisterServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/demo6/src/main/java/site/whatsblog/bookManage/web/RegisterServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo6/src/main/java/site/whatsblog/bookManage/web/UpdateBookServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/demo6/src/main/java/site/whatsblog/bookManage/web/UpdateBookServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo6/src/main/resources/appllicationContext-book.xml" beforeDir="false" afterPath="$PROJECT_DIR$/demo6/src/main/resources/appllicationContext-book.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo6/src/main/resources/druid.properties" beforeDir="false" afterPath="$PROJECT_DIR$/demo6/src/main/resources/druid.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo6/src/main/webapp/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/demo6/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo6/src/main/webapp/bookInfo.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo6/src/main/webapp/list.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/demo6/src/main/webapp/list.jsp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -71,6 +57,13 @@
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="alwaysUpdateSnapshots" value="true" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
   <component name="ProjectId" id="28XbWeL2r93PTLj3Yd4WQbcPmpJ" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
@@ -81,18 +74,14 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
-    "jdk.selected.JAVA_MODULE": "1.8",
-    "last_opened_file_path": "D:/Professional Files/Java Project/USTS-J2EE/demo6/src/main/webapp",
+    "com.intellij.openapi.externalSystem.service.settings.ExternalSystemGroupConfigurable": "ALL",
+    "last_opened_file_path": "D:/Professional Files/Java Project/USTS-J2EE/demo6/target/demo6/WEB-INF",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
-    "project.structure.last.edited": "模块",
-    "project.structure.proportion": "0.15234375",
-    "project.structure.side.proportion": "0.2",
+    "settings.editor.selected.configurable": "MavenSettings",
     "spring.configuration.checksum": "898d4aa1627a5679f64c47df03377764"
   }
 }]]></component>
@@ -104,11 +93,11 @@
       <recent name="site.whatsblog.dao.impl" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\Professional Files\Java Project\USTS-J2EE\demo6\target\demo6\WEB-INF" />
       <recent name="D:\Professional Files\Java Project\USTS-J2EE\demo6\src\main\webapp" />
       <recent name="D:\Professional Files\Java Project\USTS-J2EE\demo6\sql" />
       <recent name="D:\Professional Files\Java Project\USTS-J2EE\demo6\target\demo6" />
       <recent name="D:\Professional Files\Java Project\USTS-J2EE\demo6\src\main\resources" />
-      <recent name="D:\Professional Files\Java Project\USTS-J2EE\demo5\sql" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="D:\Professional Files\Java Project\USTS-J2EE\demo6\src\main" />
@@ -174,7 +163,8 @@
       </method>
     </configuration>
     <configuration name="Tomcat 8.5.75" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 8.5.75" ALTERNATIVE_JRE_ENABLED="false" nameIsGenerated="true">
-      <option name="UPDATING_POLICY" value="restart-server" />
+      <option name="UPDATE_ON_FRAME_DEACTIVATION" value="true" />
+      <option name="UPDATE_CLASSES_ON_FRAME_DEACTIVATION" value="true" />
       <deployment>
         <artifact name="demo6:war exploded">
           <settings>
@@ -292,6 +282,8 @@
       <workItem from="1651396734105" duration="2870000" />
       <workItem from="1651408316909" duration="7927000" />
       <workItem from="1651417450404" duration="1032000" />
+      <workItem from="1651418528304" duration="456000" />
+      <workItem from="1651457611205" duration="3766000" />
     </task>
     <task id="LOCAL-00001" summary="实验三四">
       <created>1651382262193</created>
@@ -321,7 +313,14 @@
       <option name="project" value="LOCAL" />
       <updated>1651398813735</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="实验六新增图书管理系统">
+      <created>1651418569069</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1651418569069</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -345,14 +344,15 @@
     <MESSAGE value="实验六七" />
     <MESSAGE value="实验八" />
     <MESSAGE value="实验六新增图书管理系统" />
-    <option name="LAST_COMMIT_MESSAGE" value="实验六新增图书管理系统" />
+    <MESSAGE value="实验六图书管理系统修改，使用Spring容器管理" />
+    <option name="LAST_COMMIT_MESSAGE" value="实验六图书管理系统修改，使用Spring容器管理" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/demo6/src/main/java/site/whatsblog/bookManage/web/LoginServlet.java</url>
-          <line>36</line>
+          <line>38</line>
           <option name="timeStamp" value="1" />
         </line-breakpoint>
       </breakpoints>

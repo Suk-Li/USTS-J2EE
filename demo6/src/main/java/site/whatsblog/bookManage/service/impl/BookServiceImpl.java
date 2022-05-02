@@ -23,7 +23,7 @@ import java.util.List;
 @Service
 public class BookServiceImpl implements BookService {
     @Autowired
-    private BookDao bookDao = new BookDaoImpl();
+    private BookDao bookDao;
     @Override
     public List<Book> getAllBook() {
         return bookDao.getAllBook();

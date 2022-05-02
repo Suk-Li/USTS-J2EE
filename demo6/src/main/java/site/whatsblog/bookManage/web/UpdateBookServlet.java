@@ -11,6 +11,8 @@ package site.whatsblog.bookManage.web; /**
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
+import org.springframework.web.context.WebApplicationContext;
+import org.springframework.web.context.support.WebApplicationContextUtils;
 import site.whatsblog.bookManage.pojo.Book;
 import site.whatsblog.bookManage.service.BookService;
 import site.whatsblog.bookManage.service.impl.BookServiceImpl;
@@ -25,8 +27,6 @@ import java.io.IOException;
 @Controller
 @WebServlet(name = "UpdateBookServlet", value = "/UpdateBookServlet.do")
 public class UpdateBookServlet extends HttpServlet {
-    @Autowired
-    private BookService bookService = new BookServiceImpl();
     @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         this.doPost(request,response);
@@ -40,6 +40,8 @@ public class UpdateBookServlet extends HttpServlet {
         String isbn = request.getParameter("isbn");
         int bookNum = Integer.parseInt(request.getParameter("bookNum"));
         Book book = new Book(bookId,bookName, author, isbn, bookNum);
+        WebApplicationContext webApplicationContext = WebApplicationContextUtils.getWebApplicationContext(this.getServletContext());
+        BookService bookService = (BookService) webApplicationContext.getBean("bookServiceImpl");
         int i = bookService.updateBook(book);
         if (i == 1) {
             response.sendRedirect("FindAllBookServlet.do");

@@ -20,7 +20,7 @@ import site.whatsblog.bookManage.service.UserService;
 @Service
 public class UserServiceImpl implements UserService {
     @Autowired
-    private UserDao userDao = new UserDaoImpl();
+    private UserDao userDao;
     @Override
     public User findUserByUsernameAndPassword(String username, String password) {
         return userDao.findUserByUsernameAndPassword(username,password);

@@ -11,6 +11,8 @@ package site.whatsblog.bookManage.web; /**
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
+import org.springframework.web.context.WebApplicationContext;
+import org.springframework.web.context.support.WebApplicationContextUtils;
 import site.whatsblog.bookManage.pojo.Book;
 import site.whatsblog.bookManage.pojo.User;
 import site.whatsblog.bookManage.service.BookService;
@@ -27,8 +29,6 @@ import java.util.List;
 @Controller
 @WebServlet(name = "FindAllBookServlet", value = "/FindAllBookServlet.do")
 public class FindAllBookServlet extends HttpServlet {
-    @Autowired
-    private BookService bookService = new BookServiceImpl();
 
     @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
@@ -39,6 +39,8 @@ public class FindAllBookServlet extends HttpServlet {
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         User user = (User) request.getSession().getAttribute("user");
         if (user!=null) {
+            WebApplicationContext webApplicationContext = WebApplicationContextUtils.getWebApplicationContext(this.getServletContext());
+            BookService bookService = (BookService) webApplicationContext.getBean("bookServiceImpl");
             List<Book> books = bookService.getAllBook();
             request.setAttribute("books", books);
             request.getRequestDispatcher("list.jsp").forward(request, response);

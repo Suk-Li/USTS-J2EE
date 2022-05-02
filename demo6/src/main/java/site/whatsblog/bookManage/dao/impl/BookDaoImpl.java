@@ -27,12 +27,12 @@ import java.util.List;
  */
 @Repository
 public class BookDaoImpl implements BookDao {
-
+    @Autowired
+    private Connection connection;
     @Override
     public List<Book> getAllBook() {
         List<Book> books = null;
         try {
-            Connection connection = JDBCUtils.getDataSource().getConnection();
             PreparedStatement statement = connection.prepareStatement("select * from book");
             ResultSet resultSet = statement.executeQuery();
             books = new ArrayList<>();
@@ -45,7 +45,7 @@ public class BookDaoImpl implements BookDao {
                 book.setBookNum(resultSet.getInt("book_num"));
                 books.add(book);
             }
-            connection.close();
+
         } catch (SQLException e) {
             throw new RuntimeException(e);
         }
@@ -56,7 +56,6 @@ public class BookDaoImpl implements BookDao {
     public Book getBookById(int id) {
         Book book = null;
         try {
-            Connection connection = JDBCUtils.getDataSource().getConnection();
             PreparedStatement statement = connection.prepareStatement("select * from book where book_id = ?");
             statement.setInt(1,id);
             ResultSet resultSet = statement.executeQuery();
@@ -68,6 +67,7 @@ public class BookDaoImpl implements BookDao {
                 book.setIsbn(resultSet.getString("isbn"));
                 book.setBookNum(resultSet.getInt("book_num"));
             }
+
         } catch (SQLException e) {
             throw new RuntimeException(e);
         }
@@ -78,13 +78,14 @@ public class BookDaoImpl implements BookDao {
     public int addBook(Book book) {
         int i = 0;
         try {
-            Connection connection = JDBCUtils.getDataSource().getConnection();
+
             PreparedStatement statement = connection.prepareStatement("insert into book(book_name,author,isbn,book_num) values(?,?,?,?)");
             statement.setString(1,book.getBookName());
             statement.setString(2,book.getAuthor());
             statement.setString(3,book.getIsbn());
             statement.setInt(4,book.getBookNum());
             i = statement.executeUpdate();
+
         } catch (SQLException e) {
             throw new RuntimeException(e);
         }
@@ -95,7 +96,7 @@ public class BookDaoImpl implements BookDao {
     public int updateBook(Book book) {
         int i = 0;
         try {
-            Connection connection = JDBCUtils.getDataSource().getConnection();
+
             PreparedStatement statement = connection.prepareStatement("update book set book_name = ?,author = ?,isbn = ?,book_num = ? where book_id = ?");
             statement.setString(1,book.getBookName());
             statement.setString(2,book.getAuthor());
@@ -103,6 +104,7 @@ public class BookDaoImpl implements BookDao {
             statement.setInt(4,book.getBookNum());
             statement.setInt(5,book.getBookId());
             i = statement.executeUpdate();
+
         } catch (SQLException e) {
             throw new RuntimeException(e);
         }
@@ -113,10 +115,11 @@ public class BookDaoImpl implements BookDao {
     public int deleteBook(int id) {
         int i = 0;
         try {
-            Connection connection = JDBCUtils.getDataSource().getConnection();
+
             PreparedStatement statement = connection.prepareStatement("delete from book where book_id = ?");
             statement.setInt(1,id);
             i = statement.executeUpdate();
+
         } catch (SQLException e) {
             throw new RuntimeException(e);
         }

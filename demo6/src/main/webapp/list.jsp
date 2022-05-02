@@ -11,8 +11,8 @@
     <title>图书列表</title>
 </head>
 <body>
-<h1>图书列表</h1>
-<a href="addBook.jsp">添加图书</a>
+<h1>图书列表&nbsp;&nbsp;&nbsp;<a href="addBook.jsp">添加图书</a></h1>
+
 <table border="1">
     <tr>
         <th>图书编号</th>

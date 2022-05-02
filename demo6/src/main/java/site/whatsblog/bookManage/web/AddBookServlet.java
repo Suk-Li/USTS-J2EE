@@ -11,8 +11,11 @@ package site.whatsblog.bookManage.web; /**
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
+import org.springframework.web.context.WebApplicationContext;
+import org.springframework.web.context.support.WebApplicationContextUtils;
 import site.whatsblog.bookManage.pojo.Book;
 import site.whatsblog.bookManage.service.BookService;
+import site.whatsblog.bookManage.service.UserService;
 import site.whatsblog.bookManage.service.impl.BookServiceImpl;
 
 import javax.servlet.*;
@@ -23,8 +26,7 @@ import java.io.IOException;
 @Controller
 @WebServlet(name = "AddBookServlet", value = "/AddBookServlet.do")
 public class AddBookServlet extends HttpServlet {
-    @Autowired
-    private BookService bookService = new BookServiceImpl();
+
     @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         this.doPost(request,response);
@@ -36,6 +38,8 @@ public class AddBookServlet extends HttpServlet {
         String author = request.getParameter("author");
         String isbn = request.getParameter("isbn");
         int bookNum = Integer.parseInt(request.getParameter("bookNum"));
+        WebApplicationContext webApplicationContext = WebApplicationContextUtils.getWebApplicationContext(this.getServletContext());
+        BookService bookService = (BookService) webApplicationContext.getBean("bookServiceImpl");
         Book book = new Book(bookName, author, isbn, bookNum);
         int i = bookService.addBook(book);
         if (i == 1) {
