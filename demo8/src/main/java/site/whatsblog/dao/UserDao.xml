@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="site.whatsblog.dao.UserDao">
+    <resultMap id="UserMap" type="User">
+        <id property="id" column="id"/>
+        <result property="username" column="username"/>
+        <result property="password" column="password"/>
+    </resultMap>
+    <insert id="insert">
+        INSERT INTO users (username, password) VALUES (#{username}, #{password})
+    </insert>
+    <update id="update">
+        UPDATE users SET username=#{username}, password=#{password} WHERE id=#{id}
+    </update>
+    <delete id="delete">
+        DELETE FROM users WHERE id=#{id}
+    </delete>
+
+    <select id="selectAll" resultMap="UserMap">
+        SELECT * FROM users
+    </select>
+    <select id="selectById" resultMap="UserMap">
+        SELECT * FROM users WHERE id=#{id}
+    </select>
+    <select id="selectByUsernameAndPassword" resultMap="UserMap">
+        SELECT * FROM users WHERE username=#{username} AND password=#{password}
+    </select>
+    <select id="selectByName" resultMap="UserMap">
+        SELECT * FROM users WHERE username=#{username}
+    </select>
+</mapper>
